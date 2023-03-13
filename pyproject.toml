@@ -1,0 +1,23 @@
+[project]
+name = "test02"
+version = "0.0.1"
+authors = [
+    { name="Andy G", email="test@test.com" }
+]
+description = "test02 - description"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pydantic",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mod1"]
